@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-gidx
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/rhtap-demo-bkto-tenant/rhtap-demo-app/hacbs-test-project-gidx@sha256:042a9ee64277f1fa5c7c29dbc1bf61fc3eb93932f94fc2339506c6687a60e40d
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
